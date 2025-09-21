@@ -4,7 +4,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copiar requirements desde src
-COPY src/requirements.txt .
+COPY src/requirements.txt ./requirements.txt
 
 # Instalar dependencias
 RUN pip install -r requirements.txt
